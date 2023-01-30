@@ -41,7 +41,7 @@
 .dividers{
     display: flex;
     gap: 5px;
-    margin: 0px 267px;
+    margin: 0px auto;
 }
 
 .under-about__divider-one{
@@ -66,13 +66,11 @@
     padding: 5px 10px;
     border: 1px solid var.$borderColor;
     background: var.$mainBackground;
-    font: var.$mySocialLinksText
+    font: var.$mySocialLinksText;
     color: var.$mainColour;
 }
 
-.profil__button ~ a{
-    color: var.$mainColour;
-}
+
 
 .profil__button:hover{
     transform: scale(1.1);

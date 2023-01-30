@@ -129,6 +129,16 @@ main {
   margin: 0 auto;
 }
 
+.white-box {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  top: -33px;
+  margin: 0 auto;
+  z-index: 0;
+  background: white;
+}
+
 .section-slider {
   margin: 0 auto;
 }
@@ -229,7 +239,7 @@ main {
 .dividers {
   display: flex;
   gap: 5px;
-  margin: 0px 267px;
+  margin: 0px auto;
 }
 
 .under-about__divider-one {
@@ -255,12 +265,14 @@ main {
   border: 1px solid #FFCC00;
   background: #fff;
   font: 700 14px/14px "OpenSans-bold", sans-serif;
+  color: #666666;
 }
 
 .profil__button:hover {
   transform: scale(1.1);
   background-color: #FFCC00;
   font: 700 14px/14px "OpenSans-bold", sans-serif;
+  color: #666666;
 }
 
 .my-name, .dividers, .under-name__divider, .under-about__divider, .my-position {
@@ -275,8 +287,11 @@ main {
   display: flex;
   gap: 5px;
   width: 135px;
-  width: 100%;
   align-items: center;
-  justify-content: center;
   margin-bottom: 49px;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
 }/*# sourceMappingURL=index.css.map */
