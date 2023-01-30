@@ -1,0 +1,104 @@
+@use "preparedCode";
+@use "var";
+
+.slider{
+    @extend %sliderArea;
+}
+
+.slider-text{
+    display: block;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.my-name{
+    font: var.$myName;
+    color: var.$mainColour;
+}
+
+.under-name__divider{
+    max-width: 100px;
+    width: 100%;
+    border-top: 1px solid var.$borderColor;
+}
+
+.my-position{
+    font: var.$myPosition;
+    color: var.$mainColour;
+}
+
+.social-links{
+    color: var.$social-link;
+}
+
+.text-about{
+    font: var.$myInformation;
+    color: var.$mainColour;
+    padding: 0px 85px;
+}
+
+.dividers{
+    display: flex;
+    gap: 5px;
+    margin: 0px 267px;
+}
+
+.under-about__divider-one{
+    max-width: 10px;
+    width: 100%;
+    border-top: 4px solid var.$borderColor;
+    
+
+}
+.under-about__divider-two{
+    max-width: 20px;
+    width: 100%;
+    border-top: 4px solid var.$borderColor;
+}
+.under-about__divider-three{
+    max-width: 10px;
+    width: 100%;
+    border-top: 4px solid var.$borderColor;
+}
+
+.profil__button{
+    padding: 5px 10px;
+    border: 1px solid var.$borderColor;
+    background: var.$mainBackground;
+    font: var.$mySocialLinksText
+    color: var.$mainColour;
+}
+
+.profil__button ~ a{
+    color: var.$mainColour;
+}
+
+.profil__button:hover{
+    transform: scale(1.1);
+    background-color: var.$borderColor;
+    font: var.$mySocialLinksText;
+    color: var.$mainColour;
+}
+
+
+.my-name, .dividers, .under-name__divider, .under-about__divider, .my-position {
+    margin-bottom: var.$marginBottom;
+}
+
+.text-about{
+    margin-bottom: 20px;
+}
+
+.social-links{
+    display: flex;
+    gap: 5px;
+    width: 135px;
+    align-items: center;
+    margin-bottom: 49px;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+}

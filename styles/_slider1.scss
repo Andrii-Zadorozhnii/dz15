@@ -1,0 +1,8 @@
+@use "preparedCode";
+@use "var";
+
+
+
+.slider{
+    @extend %sliderArea;
+}
