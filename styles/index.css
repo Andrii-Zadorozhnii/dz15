@@ -14,9 +14,9 @@
 }
 
 .slider {
-  max-width: 583.75px;
+  max-width: 583.4px;
   width: 100%;
-  max-height: 560px;
+  max-height: 560.1px;
   padding-top: 70px;
   padding-bottom: 70px;
   margin: 0 auto;
@@ -52,9 +52,9 @@
 }
 
 .slider {
-  max-width: 583.75px;
+  max-width: 583.4px;
   width: 100%;
-  max-height: 560px;
+  max-height: 560.1px;
   padding-top: 70px;
   padding-bottom: 70px;
   margin: 0 auto;
@@ -101,9 +101,9 @@ main {
 }
 
 .slider {
-  max-width: 583.75px;
+  max-width: 583.4px;
   width: 100%;
-  max-height: 560px;
+  max-height: 560.1px;
   padding-top: 70px;
   padding-bottom: 70px;
   margin: 0 auto;
@@ -183,9 +183,9 @@ main {
 }
 
 .slider {
-  max-width: 583.75px;
+  max-width: 583.4px;
   width: 100%;
-  max-height: 560px;
+  max-height: 560.1px;
   padding-top: 70px;
   padding-bottom: 70px;
   margin: 0 auto;
@@ -205,42 +205,72 @@ main {
     display: none;
   }
 }
-.box {
+.clip {
   position: absolute;
-  top: 0px;
-  width: 100px;
-  height: 100px;
-  z-index: 0;
+  display: grid;
+  place-items: center;
+  width: 350px;
+  height: 350px;
 }
 
-.box-1 {
-  right: 1125px;
-  top: 385px;
-  border-top: 1px solid #FFCC00;
-  border-left: 1px solid #FFCC00;
+.clip img {
+  width: 90%;
+  height: 90%;
 }
 
-.box-2 {
-  right: 1125px;
-  top: 722px;
-  border-left: 1px solid #FFCC00;
-  border-bottom: 1px solid #FFCC00;
+@-webkit-keyframes clipMe {
+  0%, 100% {
+    clip: rect(0, 400px, 2px, 0);
+  }
+  25% {
+    clip: rect(0, 2px, 400px, 0);
+  }
+  50% {
+    clip: rect(398px, 400px, 400px, 0px);
+  }
+  75% {
+    clip: rect(0, 400px, 400px, 398px);
+  }
 }
 
-.box-3 {
-  right: 785px;
-  top: 385px;
-  border-top: 1px solid #FFCC00;
-  border-right: 1px solid #FFCC00;
+@keyframes clipMe {
+  0%, 100% {
+    clip: rect(0, 400px, 2px, 0);
+  }
+  25% {
+    clip: rect(0, 2px, 400px, 0);
+  }
+  50% {
+    clip: rect(398px, 400px, 400px, 0px);
+  }
+  75% {
+    clip: rect(0, 400px, 400px, 398px);
+  }
+}
+.clip::before,
+.clip::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 110%;
+  height: 110%;
+  margin: -5%;
+  box-shadow: inset 0 0 0 2px #FFCC00;
+  -webkit-animation: clipMe 3s infinite;
+          animation: clipMe 3s infinite;
 }
 
-.box-4 {
-  right: 785px;
-  top: 722px;
-  border-right: 1px solid #FFCC00;
-  border-bottom: 1px solid #FFCC00;
+.clip::before {
+  -webkit-animation-delay: -1.5s;
+          animation-delay: -1.5s;
 }
 
+@media (max-width: 1439.9px) {
+  .clip {
+    margin-top: 250px;
+  }
+}
 .container, .slider {
   display: flex;
   justify-content: center;
@@ -257,9 +287,9 @@ main {
 }
 
 .slider {
-  max-width: 583.75px;
+  max-width: 583.4px;
   width: 100%;
-  max-height: 560px;
+  max-height: 560.1px;
   padding-top: 70px;
   padding-bottom: 70px;
   margin: 0 auto;
@@ -291,6 +321,11 @@ main {
   color: #666666;
 }
 
+@media (max-width: 1439.9px) {
+  .my-name {
+    margin-top: 220px;
+  }
+}
 .under-name__divider {
   max-width: 100px;
   width: 100%;

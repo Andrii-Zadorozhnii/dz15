@@ -17,6 +17,12 @@
     color: var.$mainColour;
 }
 
+@media (max-width: 1439.9px){
+    .my-name{
+        margin-top: 220px;
+    }
+}
+
 .under-name__divider{
     max-width: 100px;
     width: 100%;

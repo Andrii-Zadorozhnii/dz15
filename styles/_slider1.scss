@@ -7,6 +7,70 @@
     @extend %sliderArea;
 }
 
+.clip{
+    position: absolute;
+    display: grid;
+    place-items: center;
+    width: 350px;
+    height: 350px;
+}
+
+.clip img{ 
+    width: 90%;
+    height: 90%;
+}
+
+@keyframes clipMe{
+    0%, 100% {clip: rect(0, 400px, 2px, 0);}
+    25% {clip: rect(0, 2px, 400px, 0);}
+    50% {clip: rect(398px, 400px, 400px,0px);}
+    75% {clip: rect(0, 400px, 400px, 398px);}
+}
+.clip::before, 
+.clip::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 110%;
+    height: 110%;
+    margin: -5%;
+    box-shadow: inset 0 0 0 2px var.$borderColor;
+    animation: clipMe 3s infinite;
+}
+
+.clip::before{
+    animation-delay: -1.5s;
+}
+
+@media (max-width: 1439.9px){
+    .clip{
+        margin-top: 250px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 // .additional-border{
 //     position: absolute;
@@ -22,39 +86,39 @@
 
 
 
-.box{
-    position: absolute;
-    top: 0px;
-    width: 100px;
-    height: 100px;
-    z-index:0;
+// .box{
+//     position: absolute;
+//     top: 0px;
+//     width: 100px;
+//     height: 100px;
+//     z-index:0;
 
-}
+// }
 
-.box-1{
-    right: 1125px;
-    top: 385px;
-    border-top: 1px solid var.$borderColor;
-    border-left: 1px solid var.$borderColor;
-}
+// .box-1{
+//     right: 1125px;
+//     top: 385px;
+//     border-top: 1px solid var.$borderColor;
+//     border-left: 1px solid var.$borderColor;
+// }
 
-.box-2{
-    right: 1125px; 
-    top: 722px;
-    border-left: 1px solid var.$borderColor;
-    border-bottom: 1px solid var.$borderColor;
-}
+// .box-2{
+//     right: 1125px; 
+//     top: 722px;
+//     border-left: 1px solid var.$borderColor;
+//     border-bottom: 1px solid var.$borderColor;
+// }
 
-.box-3{
-    right: 785px;
-    top: 385px;
-    border-top: 1px solid var.$borderColor;
-    border-right: 1px solid var.$borderColor;
-}
+// .box-3{
+//     right: 785px;
+//     top: 385px;
+//     border-top: 1px solid var.$borderColor;
+//     border-right: 1px solid var.$borderColor;
+// }
 
-.box-4{
-    right: 785px; 
-    top: 722px;
-    border-right: 1px solid var.$borderColor;
-    border-bottom: 1px solid var.$borderColor;
-}
+// .box-4{
+//     right: 785px; 
+//     top: 722px;
+//     border-right: 1px solid var.$borderColor;
+//     border-bottom: 1px solid var.$borderColor;
+// }
