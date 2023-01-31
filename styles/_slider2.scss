@@ -29,6 +29,7 @@
 }
 
 .social-links{
+    margin: 0 auto;
     color: var.$social-link;
 }
 
@@ -40,6 +41,7 @@
 
 .dividers{
     display: flex;
+    max-width: 50px;
     gap: 5px;
     margin: 0px auto;
 }

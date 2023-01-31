@@ -6,3 +6,51 @@
 .slider{
     @extend %sliderArea;
 }
+
+// .slider-image{
+//     border-right: 1px solid var.$borderColor;
+// }
+
+// @media (max-width: 1440px){
+//     .slider-image{
+//         border-right: 0px;
+//         border-bottom: 1px solid var.$borderColor;
+//     }
+// }
+
+// .box{
+//     position: absolute;
+//     top: 0px;
+//     width: 100px;
+//     height: 100px;
+//     z-index:0;
+
+// }
+
+// .box-1{
+//     right: 1121px;
+//     top: 385px;
+//     border-top: 1px solid var.$borderColor;
+//     border-left: 1px solid var.$borderColor;
+// }
+
+// .box-2{
+//     right: 1121px; 
+//     top: 722px;
+//     border-left: 1px solid var.$borderColor;
+//     border-bottom: 1px solid var.$borderColor;
+// }
+
+// .box-3{
+//     right: 785px;
+//     top: 385px;
+//     border-top: 1px solid var.$borderColor;
+//     border-right: 1px solid var.$borderColor;
+// }
+
+// .box-4{
+//     right: 785px; 
+//     top: 722px;
+//     border-right: 1px solid var.$borderColor;
+//     border-bottom: 1px solid var.$borderColor;
+// }
